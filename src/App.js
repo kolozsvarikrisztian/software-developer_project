@@ -5,14 +5,12 @@ import Presentations from './Presentations'
 function App() {
   return (
     <>
-      <Header>2/14 szoftverfejlesztők</Header>
+      <Header>2/14 szoftverfejlesztők csapata</Header>
       <Main>
-        <h1>Tanulók</h1>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-4">
+        {/* <h1>Tanulók</h1> */}
+          <div className="container">
+            <div className="row">
                 <Presentations />
-              </div>
             </div>
           </div>
       </Main>
@@ -53,4 +51,4 @@ const Main = styled.main`
   // background-color: rgb(214, 244, 245);
   height: calc(100vh - 100px - 58px);
   overflow: auto;
-`
+  `
